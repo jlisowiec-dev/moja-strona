@@ -23,7 +23,9 @@
       var btn = e.target.closest("button");
       if (!btn) return;
       filterBar.querySelectorAll("button").forEach(function (b) {
-        b.classList.toggle("is-active", b === btn);
+        var active = b === btn;
+        b.classList.toggle("is-active", active);
+        b.setAttribute("aria-pressed", active ? "true" : "false");
       });
       var cat = btn.dataset.filter;
       cards.forEach(function (c) {

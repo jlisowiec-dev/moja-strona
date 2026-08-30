@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/o-kancelarii.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/uslugi.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/zespol.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/baza-wiedzy.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jlisowiec-dev.github.io/moja-strona/kontakt.html</loc>
+    <priority>0.9</priority>
+  </url>
+</urlset>

@@ -1,0 +1,21 @@
+# Statyczna strona — bez procesu budowania.
+# Publikowany jest katalog repozytorium (pliki .html w korzeniu).
+
+[build]
+  publish = "."
+  command = ""
+
+# Nie przepisujemy adresów z .html (kanoniczne URL-e i sitemap używają rozszerzeń).
+# Netlify samo serwuje 404.html dla nieznanych ścieżek.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

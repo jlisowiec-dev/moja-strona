@@ -134,6 +134,24 @@ p{margin:0 0 1rem}
 .nav-toggle{display:none;background:none;border:1.5px solid rgba(20,12,0,.35);border-radius:10px;width:44px;height:44px;cursor:pointer;color:#1a1305}
 .nav-toggle svg{margin:auto}
 
+.nav__dd{position:relative}
+.nav__dd-btn{
+  font-family:inherit;font-size:.92rem;font-weight:600;color:#241a06;cursor:pointer;
+  background:none;border:0;padding:.6em .9em;border-radius:999px;
+  display:inline-flex;align-items:center;gap:.4em;transition:background .15s ease,color .15s ease;
+}
+.nav__dd-btn::after{content:"";width:.4em;height:.4em;border-right:1.7px solid currentColor;border-bottom:1.7px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .18s ease}
+.nav__dd-btn:hover{background:rgba(20,12,0,.09);color:#000}
+.nav__dd-btn--active{background:rgba(20,12,0,.16);color:#000}
+.nav__dd.is-open .nav__dd-btn::after{transform:rotate(-135deg) translateY(-1px)}
+.nav__dd-menu{
+  position:absolute;top:calc(100% + 8px);left:0;min-width:216px;z-index:60;
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow-md);padding:6px;display:none;flex-direction:column;gap:2px;
+}
+.nav__dd.is-open .nav__dd-menu{display:flex}
+.nav__dd-menu a{padding:.6em .8em;border-radius:8px;font-size:.9rem;white-space:nowrap}
+
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;background:var(--gold-gradient);color:#1c1508}
 .hero::before{content:"";position:absolute;inset:0;background-image:var(--gold-grain);mix-blend-mode:soft-light;opacity:.55;pointer-events:none}
@@ -332,6 +350,11 @@ p{margin:0 0 1rem}
   .nav a{padding:.85em .6em;border-radius:8px}
   .nav__cta{margin:8px 0 0}
   .nav-toggle{display:flex}
+  .nav__dd{width:100%}
+  .nav__dd-btn{width:100%;justify-content:space-between;padding:.85em .6em;border-radius:8px;font-weight:600}
+  .nav__dd-menu{position:static;display:flex;min-width:0;padding:2px 0 6px 14px;border:0;background:none;box-shadow:none;border-radius:0}
+  .nav__dd-menu a{font-size:.92rem}
+  .nav__dd-btn::after{display:none}
 }
 @media (max-width:620px){
   .grid--2,.grid--3,.grid--4{grid-template-columns:1fr}

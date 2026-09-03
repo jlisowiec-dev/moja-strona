@@ -2,3 +2,8 @@ Thumbs.db
 .DS_Store
 *.swp
 *.tmp
+
+# Materiały źródłowe wrzucane do obróbki (kopie robocze trafiają do assets/)
+/instrukcje/
+/Natalia.jpeg
+/Magdalena.jpeg

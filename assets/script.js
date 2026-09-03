@@ -15,6 +15,29 @@
     });
   }
 
+  /* --- rozwijane menu "Instrukcje" --- */
+  var dd = document.querySelector(".nav__dd");
+  if (dd) {
+    var ddBtn = dd.querySelector(".nav__dd-btn");
+    ddBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle("is-open");
+      ddBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function (e) {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove("is-open");
+        ddBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        dd.classList.remove("is-open");
+        ddBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   /* --- filtr bazy wiedzy --- */
   var filterBar = document.querySelector(".filter-bar");
   if (filterBar) {

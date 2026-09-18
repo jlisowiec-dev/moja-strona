@@ -127,6 +127,7 @@ p{margin:0 0 1rem}
 }
 .nav a:hover{background:rgba(20,12,0,.09);color:#000}
 .nav a[aria-current="page"]{background:rgba(20,12,0,.16);color:#000}
+.nav a,.nav__dd-btn{white-space:nowrap}
 .nav__cta{margin-left:10px}
 .nav a.nav__cta,.nav a.nav__cta:hover{color:#fff}
 .nav a.nav__cta:hover{background:#000}
@@ -194,6 +195,15 @@ p{margin:0 0 1rem}
 .card p{font-size:.96rem;color:var(--muted);margin-bottom:.8em}
 .card__link{font-weight:600;font-size:.9rem;color:var(--gold-800)}
 .card__link::after{content:" →"}
+/* ---------- narzędzia (kafelki aplikacji) ---------- */
+.tool-card{display:flex;flex-direction:column}
+.tool-card__badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tool-card__badges span{background:var(--gold-100);color:var(--gold-900);font-size:.74rem;font-weight:600;padding:.35em .8em;border-radius:999px}
+.tool-card__badges .tool-card__soon{background:var(--ink);color:#fff}
+.tool-card__btn{align-self:flex-start;margin-top:auto}
+.btn.is-disabled{opacity:.45;cursor:not-allowed;pointer-events:none;box-shadow:none}
+.tool-note{margin-top:28px;font-size:.95rem;color:var(--muted)}
+.tool-note a{color:var(--gold-800);font-weight:600}
 
 /* ---------- lista atutów ---------- */
 .feature{display:flex;gap:16px;align-items:flex-start}
@@ -335,13 +345,16 @@ p{margin:0 0 1rem}
 .skiplink:focus{left:0}
 
 /* ---------- responsywność ---------- */
+/* menu: na średnich ekranach ciaśniej, bez przycisku w menu (jest w górnym pasku) */
+@media (max-width:1180px) and (min-width:961px){
+  .nav{gap:0}
+  .nav a,.nav__dd-btn{padding:.55em .6em;font-size:.88rem}
+  .nav a.nav__cta{display:none}
+  .site-header .container{gap:16px}
+}
+
 @media (max-width:960px){
-  .grid--3,.grid--4{grid-template-columns:repeat(2,1fr)}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .spec-card{grid-template-columns:1fr}
   .brand__logo{height:44px}
-  .hero__inner{flex-direction:column;align-items:flex-start}
-  .hero__crest{width:min(230px,58%);margin-top:4px;margin-right:0}
   .site-header .container{min-height:70px}
   .nav{
     position:fixed;inset:70px 0 auto 0;flex-direction:column;align-items:stretch;
@@ -357,6 +370,11 @@ p{margin:0 0 1rem}
   .nav__dd-menu{position:static;display:flex;min-width:0;padding:2px 0 6px 14px;border:0;background:none;box-shadow:none;border-radius:0}
   .nav__dd-menu a{font-size:.92rem}
   .nav__dd-btn::after{display:none}
+  .grid--3,.grid--4{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .spec-card{grid-template-columns:1fr}
+  .hero__inner{flex-direction:column;align-items:flex-start}
+  .hero__crest{width:min(230px,58%);margin-top:4px;margin-right:0}
 }
 @media (max-width:620px){
   .grid--2,.grid--3,.grid--4{grid-template-columns:1fr}

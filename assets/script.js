@@ -15,26 +15,27 @@
     });
   }
 
-  /* --- rozwijane menu "Instrukcje" --- */
-  var dd = document.querySelector(".nav__dd");
-  if (dd) {
+  /* --- rozwijane menu ("Instrukcje", "Narzędzia") --- */
+  var dds = document.querySelectorAll(".nav__dd");
+  function closeDd(dd) {
+    dd.classList.remove("is-open");
+    dd.querySelector(".nav__dd-btn").setAttribute("aria-expanded", "false");
+  }
+  dds.forEach(function (dd) {
     var ddBtn = dd.querySelector(".nav__dd-btn");
     ddBtn.addEventListener("click", function (e) {
       e.stopPropagation();
+      dds.forEach(function (other) { if (other !== dd) closeDd(other); });
       var open = dd.classList.toggle("is-open");
       ddBtn.setAttribute("aria-expanded", open ? "true" : "false");
     });
+  });
+  if (dds.length) {
     document.addEventListener("click", function (e) {
-      if (!dd.contains(e.target)) {
-        dd.classList.remove("is-open");
-        ddBtn.setAttribute("aria-expanded", "false");
-      }
+      dds.forEach(function (dd) { if (!dd.contains(e.target)) closeDd(dd); });
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") {
-        dd.classList.remove("is-open");
-        ddBtn.setAttribute("aria-expanded", "false");
-      }
+      if (e.key === "Escape") dds.forEach(closeDd);
     });
   }
 

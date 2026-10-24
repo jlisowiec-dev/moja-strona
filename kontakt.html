@@ -18,9 +18,9 @@
 <meta name="twitter:title" content="Kontakt – Kancelaria Lisowiec, Jasło">
 <meta name="twitter:description" content="Kancelaria Lisowiec, ul. Jana Kochanowskiego 3, 38-200 Jasło. Tel. +48 505 004 131, e-mail j.lisowiec@kancelaria-lisowiec.pl. Napisz lub umów konsultację.">
 <meta name="twitter:image" content="https://kancelarialisowiec.pl/assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/czcionki.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -141,12 +141,9 @@
             <label for="c-msg">Wiadomość *</label>
             <textarea id="c-msg" name="message" required placeholder="Opisz krótko sprawę i oczekiwany zakres wsparcia."></textarea>
           </div>
-          <label class="form__consent">
-            <input type="checkbox" required>
-            <span>Zapoznałem/-am się z <a href="polityka-prywatnosci.html">informacją o przetwarzaniu danych</a> i wyrażam zgodę na kontakt telefoniczny w sprawie mojego zapytania.</span>
-          </label>
           <button class="btn btn--primary" type="submit">Przygotuj wiadomość</button>
-          <p class="form__note">Prosimy tylko o numer telefonu i opis sprawy — oddzwonimy w godzinach pracy kancelarii. Przycisk otworzy Twój program pocztowy z gotową treścią; wystarczy ją wysłać. Możesz też od razu zadzwonić: <a href="tel:+48505004131">+48 505 004 131</a> lub napisać na <a href="mailto:j.lisowiec@kancelaria-lisowiec.pl">j.lisowiec@kancelaria-lisowiec.pl</a>.</p>
+          <p class="form__note"><b>Po kliknięciu przycisku otworzy się Twój program pocztowy — wiadomość trzeba w nim jeszcze samodzielnie wysłać.</b> Prosimy nie przesyłać za pośrednictwem formularza danych dotyczących zdrowia ani innych szczególnie chronionych informacji. Możesz też od razu zadzwonić: <a href="tel:+48505004131">+48 505 004 131</a> lub napisać na <a href="mailto:j.lisowiec@kancelaria-lisowiec.pl">j.lisowiec@kancelaria-lisowiec.pl</a>.</p>
+          <p class="form__note">Administratorem danych osobowych jest Kancelaria Podatkowo-Księgowa Euro-Max Lisowiec sp. z o.o. Dane podane w formularzu przetwarzamy wyłącznie w celu obsługi przesłanego zapytania i udzielenia odpowiedzi, na podstawie art. 6 ust. 1 lit. b lub f RODO, zależnie od charakteru zapytania. Podanie numeru telefonu jest dobrowolne, jednak niezbędne, jeżeli odpowiedź ma nastąpić telefonicznie. Szczegółowe informacje o przetwarzaniu danych osobowych i przysługujących prawach znajdują się w naszej <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
         </form>
       </div>
 

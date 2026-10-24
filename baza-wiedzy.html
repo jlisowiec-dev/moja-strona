@@ -6,21 +6,21 @@
 <title>Baza wiedzy – podatki, KSeF, restrukturyzacja, RODO</title>
 <meta name="description" content="Artykuły i alerty prawne: KSeF, ceny transferowe, restrukturyzacja, RODO i AI Act. Praktyczna wiedza dla firm, aktualizowana wraz ze zmianami przepisów.">
 <meta name="theme-color" content="#B0902F">
-<link rel="canonical" href="https://kancelaria-lisowiec.pl/baza-wiedzy.html">
+<link rel="canonical" href="https://kancelarialisowiec.pl/baza-wiedzy.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kancelaria Lisowiec">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:title" content="Baza wiedzy – podatki, KSeF, restrukturyzacja, RODO">
 <meta property="og:description" content="Artykuły i alerty prawne: KSeF, ceny transferowe, restrukturyzacja, RODO i AI Act. Praktyczna wiedza dla firm, aktualizowana wraz ze zmianami przepisów.">
-<meta property="og:url" content="https://kancelaria-lisowiec.pl/baza-wiedzy.html">
-<meta property="og:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
+<meta property="og:url" content="https://kancelarialisowiec.pl/baza-wiedzy.html">
+<meta property="og:image" content="https://kancelarialisowiec.pl/assets/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Baza wiedzy – podatki, KSeF, restrukturyzacja, RODO">
 <meta name="twitter:description" content="Artykuły i alerty prawne: KSeF, ceny transferowe, restrukturyzacja, RODO i AI Act. Praktyczna wiedza dla firm, aktualizowana wraz ze zmianami przepisów.">
-<meta name="twitter:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="twitter:image" content="https://kancelarialisowiec.pl/assets/logo.png">
+  <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/czcionki.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -52,8 +52,21 @@
       <a href="uslugi.html">Usługi</a>
       <a href="zespol.html">Zespół</a>
       <a href="baza-wiedzy.html" aria-current="page">Baza wiedzy</a>
-      <a href="baza-instrukcji.html">Instrukcje</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Instrukcje</button>
+        <div class="nav__dd-menu">
+          <a href="instrukcje-slajdy.html">Instrukcje – slajdy</a>
+          <a href="baza-instrukcji.html">Instrukcje wideo</a>
+        </div>
+      </div>
       <a href="kontakt.html">Kontakt</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Narzędzia</button>
+        <div class="nav__dd-menu">
+          <a href="nieobecnosci-urlopy.html">Panel klienta</a>
+          <a href="filmy-instruktazowe.html">Filmy instruktażowe</a>
+        </div>
+      </div>
       <a class="btn btn--primary nav__cta" href="kontakt.html">Umów konsultację</a>
     </nav>
   </div>
@@ -148,17 +161,18 @@
         <h2>Alerty prawne prosto na e-mail</h2>
         <p class="lead">Raz lub dwa razy w miesiącu podsumowanie najważniejszych zmian w podatkach, prawie pracy, restrukturyzacji i ochronie danych. Bez spamu, można wypisać się w każdej chwili.</p>
       </div>
-      <form class="form" data-demo aria-label="Zapis do newslettera">
+      <form class="form" data-mailto="j.lisowiec@kancelaria-lisowiec.pl" data-subject="Zapis do newslettera" aria-label="Zapis do newslettera">
         <div class="field">
           <label for="nl-email">Adres e-mail</label>
           <input id="nl-email" type="email" name="email" required placeholder="jan.kowalski@firma.pl">
         </div>
         <label class="form__consent">
           <input type="checkbox" required>
-          <span>Wyrażam zgodę na otrzymywanie newslettera i akceptuję <a href="polityka-prywatnosci.html">politykę prywatności</a>. Administratorem danych jest [nazwa kancelarii].</span>
+          <span>Wyrażam zgodę na otrzymywanie od Kancelarii Podatkowo-Księgowej Euro-Max Lisowiec sp. z o.o. na podany adres e-mail newslettera zawierającego informacje o zmianach w przepisach podatkowych, księgowości, publikacjach kancelarii oraz jej usługach. Wiem, że zgodę mogę wycofać w dowolnym momencie.</span>
         </label>
-        <button class="btn btn--primary" type="submit">Zapisz się</button>
-        <p class="form__note">Formularz demonstracyjny — wymaga podłączenia systemu mailingowego.</p>
+        <button class="btn btn--primary" type="submit">Przygotuj zgłoszenie</button>
+        <p class="form__note">Przycisk otworzy Twój program pocztowy z gotową prośbą o zapis — wiadomość trzeba w nim jeszcze samodzielnie wysłać.</p>
+        <p class="form__note">Administratorem danych osobowych jest Kancelaria Podatkowo-Księgowa Euro-Max Lisowiec sp. z o.o. Dane będą przetwarzane w celu wysyłki newslettera na podstawie zgody, zgodnie z art. 6 ust. 1 lit. a RODO, z uwzględnieniem art. 398 Prawa komunikacji elektronicznej. Szczegółowe informacje o przetwarzaniu danych znajdują się w <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
       </form>
     </div>
   </div>
@@ -213,7 +227,8 @@
         <li><a href="o-kancelarii.html">O kancelarii</a></li>
         <li><a href="zespol.html">Zespół</a></li>
         <li><a href="baza-wiedzy.html">Baza wiedzy</a></li>
-        <li><a href="baza-instrukcji.html">Instrukcje</a></li>
+        <li><a href="instrukcje-slajdy.html">Instrukcje – slajdy</a></li>
+        <li><a href="baza-instrukcji.html">Instrukcje wideo</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul></div>
       <div><h4>Kontakt</h4><ul>

@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Polityka prywatności i cookies – Kancelaria Lisowiec</title>
-<meta name="description" content="Informacja o przetwarzaniu danych osobowych i plikach cookies w serwisie Kancelarii Lisowiec (Euro-Max Lisowiec sp. z o.o., Jasło).">
+<title>Polityka prywatności – Kancelaria Lisowiec, Jasło</title>
+<meta name="description" content="Informacja o przetwarzaniu danych osobowych na stronie Kancelarii Lisowiec: cele, podstawy prawne, okresy przechowywania, odbiorcy i prawa osób, których dane dotyczą.">
 <meta name="theme-color" content="#B0902F">
-<link rel="canonical" href="https://kancelaria-lisowiec.pl/polityka-prywatnosci.html">
+<link rel="canonical" href="https://kancelarialisowiec.pl/polityka-prywatnosci.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kancelaria Lisowiec">
 <meta property="og:locale" content="pl_PL">
-<meta property="og:title" content="Polityka prywatności i cookies – Kancelaria Lisowiec">
-<meta property="og:description" content="Informacja o przetwarzaniu danych osobowych i plikach cookies w serwisie Kancelarii Lisowiec (Euro-Max Lisowiec sp. z o.o., Jasło).">
-<meta property="og:url" content="https://kancelaria-lisowiec.pl/polityka-prywatnosci.html">
-<meta property="og:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
+<meta property="og:title" content="Polityka prywatności – Kancelaria Lisowiec, Jasło">
+<meta property="og:description" content="Informacja o przetwarzaniu danych osobowych na stronie Kancelarii Lisowiec: cele, podstawy prawne, okresy przechowywania, odbiorcy i prawa osób, których dane dotyczą.">
+<meta property="og:url" content="https://kancelarialisowiec.pl/polityka-prywatnosci.html">
+<meta property="og:image" content="https://kancelarialisowiec.pl/assets/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Polityka prywatności i cookies – Kancelaria Lisowiec">
-<meta name="twitter:description" content="Informacja o przetwarzaniu danych osobowych i plikach cookies w serwisie Kancelarii Lisowiec (Euro-Max Lisowiec sp. z o.o., Jasło).">
-<meta name="twitter:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
+<meta name="twitter:title" content="Polityka prywatności – Kancelaria Lisowiec, Jasło">
+<meta name="twitter:description" content="Informacja o przetwarzaniu danych osobowych na stronie Kancelarii Lisowiec: cele, podstawy prawne, okresy przechowywania, odbiorcy i prawa osób, których dane dotyczą.">
+<meta name="twitter:image" content="https://kancelarialisowiec.pl/assets/logo.png">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/czcionki.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -53,8 +53,21 @@
       <a href="uslugi.html">Usługi</a>
       <a href="zespol.html">Zespół</a>
       <a href="baza-wiedzy.html">Baza wiedzy</a>
-      <a href="baza-instrukcji.html">Instrukcje</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Instrukcje</button>
+        <div class="nav__dd-menu">
+          <a href="instrukcje-slajdy.html">Instrukcje – slajdy</a>
+          <a href="baza-instrukcji.html">Instrukcje wideo</a>
+        </div>
+      </div>
       <a href="kontakt.html">Kontakt</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Narzędzia</button>
+        <div class="nav__dd-menu">
+          <a href="nieobecnosci-urlopy.html">Panel klienta</a>
+          <a href="filmy-instruktazowe.html">Filmy instruktażowe</a>
+        </div>
+      </div>
       <a class="btn btn--primary nav__cta" href="kontakt.html">Umów konsultację</a>
     </nav>
   </div>
@@ -65,44 +78,70 @@
 <section class="page-hero">
   <div class="container narrow">
     <p class="eyebrow">Informacje prawne</p>
-    <h1>Polityka prywatności i cookies</h1>
-    <p class="lead">Poniższy tekst jest szkieletem do uzupełnienia przez kancelarię. Ostateczną treść należy dostosować do faktycznych procesów przetwarzania danych.</p>
+    <h1>Polityka prywatności</h1>
+    <p class="lead">Informacja o tym, jakie dane osobowe przetwarzamy w związku z korzystaniem ze strony kancelarialisowiec.pl, w jakim celu i na jakiej podstawie.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container narrow prose">
-    <div class="placeholder-note"><b>Uwaga:</b> to wzór roboczy, nie porada prawna. Klauzulę informacyjną RODO, podstawy prawne, okresy retencji, listę odbiorców i informacje o cookies musi zweryfikować kancelaria (najlepiej radca prawny Patrycja Szatkowska) przed publikacją.</div>
 
-    <h2>1. Administrator danych</h2>
-    <p>Administratorem danych osobowych jest Kancelaria Podatkowo-Księgowa Euro-Max Lisowiec sp. z o.o. z siedzibą w Jaśle (38-200), ul. Jana Kochanowskiego 3, NIP 685-235-30-86, REGON 526943148, KRS 0001069058. Kontakt: <a href="mailto:j.lisowiec@kancelaria-lisowiec.pl">j.lisowiec@kancelaria-lisowiec.pl</a>, tel. +48 505 004 131.</p>
+    <h2>1. Administrator danych osobowych</h2>
+    <p>Administratorem danych osobowych przetwarzanych za pośrednictwem strony internetowej kancelarialisowiec.pl jest <b>Kancelaria Podatkowo-Księgowa Euro-Max Lisowiec sp. z o.o.</b> z siedzibą w Jaśle (38-200), ul. Jana Kochanowskiego 3, NIP 685-235-30-86, REGON 526943148, KRS 0001069058, Sąd Rejonowy w Rzeszowie, XII Wydział Gospodarczy KRS.</p>
+    <p>W sprawach związanych z przetwarzaniem danych osobowych można kontaktować się z Administratorem pod adresem <a href="mailto:j.lisowiec@kancelaria-lisowiec.pl">j.lisowiec@kancelaria-lisowiec.pl</a> lub telefonicznie: <a href="tel:+48505004131">+48 505 004 131</a>.</p>
 
-    <h2>2. Inspektor Ochrony Danych</h2>
-    <p>[Jeżeli powołano IOD:] Funkcję Inspektora Ochrony Danych pełni [imię i nazwisko], kontakt: [adres e-mail IOD]. [Jeżeli nie powołano — usunąć tę sekcję.]</p>
-
-    <h2>3. Cele i podstawy przetwarzania</h2>
+    <h2>2. Cele i podstawy przetwarzania danych</h2>
+    <p>Dane osobowe przetwarzamy w następujących celach:</p>
     <ul>
-      <li>obsługa zapytań z formularza kontaktowego — art. 6 ust. 1 lit. b i f RODO;</li>
-      <li>zawarcie i wykonanie umowy o świadczenie usług — art. 6 ust. 1 lit. b RODO;</li>
-      <li>wypełnienie obowiązków prawnych (m.in. podatkowych, rachunkowych, AML) — art. 6 ust. 1 lit. c RODO;</li>
-      <li>wysyłka newslettera — art. 6 ust. 1 lit. a RODO (zgoda);</li>
-      <li>dochodzenie i obrona roszczeń — art. 6 ust. 1 lit. f RODO.</li>
+      <li><b>Obsługa zapytań kierowanych przez formularz kontaktowy</b> — art. 6 ust. 1 lit. b lub f RODO, zależnie od charakteru zapytania.</li>
+      <li><b>Obsługa korespondencji e-mailowej</b> — art. 6 ust. 1 lit. b lub f RODO, odpowiednio do celu korespondencji.</li>
+      <li><b>Przygotowanie i realizacja współpracy z klientem</b> — art. 6 ust. 1 lit. b RODO w odniesieniu do osoby fizycznej będącej stroną umowy; w przypadku danych osób reprezentujących inne podmioty podstawa oceniana jest odrębnie.</li>
+      <li><b>Wysyłka newslettera</b> — art. 6 ust. 1 lit. a RODO (zgoda), z uwzględnieniem wymogów art. 398 Prawa komunikacji elektronicznej.</li>
+      <li><b>Zapewnienie bezpieczeństwa strony internetowej</b>, zapobieganie nadużyciom i obsługa zdarzeń technicznych — art. 6 ust. 1 lit. f RODO.</li>
+      <li><b>Ustalenie, dochodzenie lub obrona przed roszczeniami</b> — art. 6 ust. 1 lit. f RODO, jeżeli przetwarzanie jest niezbędne do realizacji tego celu.</li>
     </ul>
+    <p>Kontakt zwrotny dotyczący konkretnego zapytania należy odróżnić od wykorzystywania danych do działań marketingowych. Formularz kontaktowy nie służy do pozyskiwania zgód marketingowych.</p>
 
-    <h2>4. Okres przechowywania</h2>
-    <p>[Do uzupełnienia — np. czas trwania umowy oraz okresy wynikające z przepisów podatkowych i o rachunkowości, okresy przedawnienia roszczeń, do wycofania zgody w przypadku newslettera.]</p>
+    <h2>3. Zakres przetwarzanych danych</h2>
+    <p>Administrator może przetwarzać dane osobowe przekazane dobrowolnie przez użytkownika, w szczególności numer telefonu, adres e-mail, dane zawarte w wiadomości, a także dane techniczne związane z korzystaniem ze strony internetowej, jeżeli są one pozyskiwane przez stosowane rozwiązania techniczne.</p>
+    <p>Formularz kontaktowy na naszej stronie zbiera wyłącznie <b>numer telefonu, temat sprawy i treść wiadomości</b>. W przypadku newslettera przetwarzamy adres e-mail oraz dane dokumentujące udzielenie i wycofanie zgody.</p>
+    <p>Prosimy o nieprzesyłanie za pośrednictwem formularza ani poczty elektronicznej danych dotyczących zdrowia oraz innych danych szczególnych kategorii, o których mowa w art. 9 RODO.</p>
+
+    <h2>4. Okres przechowywania danych</h2>
+    <p><b>Zapytania kontaktowe, które nie doprowadziły do zawarcia umowy.</b> Dane przekazane w ramach zapytania kontaktowego przechowywane są przez okres niezbędny do jego obsługi, a po zakończeniu korespondencji nie dłużej niż <b>12 miesięcy</b>, chyba że dalsze przechowywanie jest niezbędne do ustalenia, dochodzenia lub obrony przed roszczeniami.</p>
+    <p><b>Dane związane z zawarciem i realizacją umowy.</b> Przechowywane przez czas niezbędny do realizacji umowy, a następnie przez okres wynikający z właściwych obowiązków prawnych, w szczególności podatkowych i rachunkowych, albo uzasadnionej potrzeby ochrony roszczeń.</p>
+    <p><b>Newsletter.</b> Dane osobowe przetwarzane w celu wysyłki newslettera przechowywane są do momentu wycofania zgody lub zakończenia prowadzenia newslettera, a następnie — w ograniczonym zakresie — przez okres niezbędny do wykazania prawidłowości udzielonej zgody lub obrony przed ewentualnymi roszczeniami.</p>
 
     <h2>5. Odbiorcy danych</h2>
-    <p>[Do uzupełnienia — np. dostawcy hostingu i poczty, system mailingowy, biuro rachunkowe, podmioty świadczące wsparcie IT, kancelarie współpracujące, organy publiczne w zakresie wymaganym prawem.]</p>
+    <p>Dane osobowe mogą być udostępniane podmiotom zapewniającym Administratorowi obsługę informatyczną, hostingową i pocztową, wyłącznie w zakresie niezbędnym do świadczenia tych usług oraz zgodnie z właściwymi podstawami prawnymi.</p>
+    <p>W zależności od rodzaju usługi odbiorcami danych mogą być dostawcy infrastruktury informatycznej, usług poczty elektronicznej oraz podmioty zapewniające bezpieczeństwo systemów. Dane mogą być także udostępniane organom publicznym w zakresie wymaganym przepisami prawa.</p>
 
-    <h2>6. Prawa osób, których dane dotyczą</h2>
-    <p>Przysługuje Państwu prawo dostępu do danych, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych, sprzeciwu oraz cofnięcia zgody, a także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.</p>
+    <h2>6. Pliki cookies i technologie podobne</h2>
+    <p>Strona internetowa nie wykorzystuje plików cookies ani podobnych technologii w celach analitycznych lub marketingowych. Nie korzystamy z narzędzi analitycznych, reklamowych ani monitorujących zachowanie użytkowników.</p>
+    <p>Wszystkie zasoby strony, w tym kroje pisma, serwowane są z naszego serwera. Przeglądanie strony nie powoduje automatycznego przesyłania danych do podmiotów trzecich.</p>
+    <p>Korzystanie ze strony może wiązać się z przetwarzaniem danych technicznych, w tym adresu IP, w zakresie niezbędnym do prawidłowego działania i zapewnienia bezpieczeństwa infrastruktury.</p>
 
-    <h2 id="cookies">7. Pliki cookies</h2>
-    <p>Serwis wykorzystuje [wyłącznie niezbędne / niezbędne oraz — po wyrażeniu zgody — analityczne] pliki cookies. [Opisać wykorzystywane narzędzia, np. Google Analytics, oraz sposób zarządzania zgodą i wycofania jej. Jeśli używany jest baner zgody — opisać jego działanie.]</p>
+    <h2>7. Prawa osób, których dane dotyczą</h2>
+    <p>Osobie, której dane osobowe są przetwarzane, przysługuje — w przypadkach przewidzianych w RODO — prawo:</p>
+    <ul>
+      <li>dostępu do swoich danych osobowych;</li>
+      <li>sprostowania nieprawidłowych danych;</li>
+      <li>usunięcia danych;</li>
+      <li>ograniczenia przetwarzania;</li>
+      <li>przenoszenia danych, gdy spełnione są warunki z art. 20 RODO;</li>
+      <li>wniesienia sprzeciwu wobec przetwarzania danych opartego na art. 6 ust. 1 lit. f RODO;</li>
+      <li>cofnięcia zgody w dowolnym momencie, jeżeli przetwarzanie odbywa się na jej podstawie, bez wpływu na zgodność z prawem wcześniejszego przetwarzania.</li>
+    </ul>
+    <p>Osoba, której dane dotyczą, ma również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uzna, że przetwarzanie jej danych narusza przepisy RODO.</p>
 
-    <h2>8. Zmiany polityki</h2>
-    <p>Polityka może być aktualizowana. Data ostatniej aktualizacji: [data].</p>
+    <h2>8. Zautomatyzowane podejmowanie decyzji</h2>
+    <p>Dane osobowe nie są wykorzystywane do podejmowania decyzji w sposób wyłącznie zautomatyzowany, w tym do profilowania wywołującego skutki prawne lub podobnie istotnie wpływającego na osobę, której dane dotyczą.</p>
+
+    <h2>9. Zmiany polityki</h2>
+    <p>Polityka może być aktualizowana w razie zmiany sposobu przetwarzania danych lub przepisów prawa. Data ostatniej aktualizacji: <b>24.10.2026</b>.</p>
+
+    <p class="form__note" style="margin-top:32px">Podstawa prawna: rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO), w szczególności art. 5, 6, 7, 12, 13, 25, 28, 30, 32, 35 i 37, oraz art. 398-399 ustawy z dnia 12 lipca 2024 r. - Prawo komunikacji elektronicznej.</p>
+
   </div>
 </section>
 
@@ -127,7 +166,8 @@
         <li><a href="o-kancelarii.html">O kancelarii</a></li>
         <li><a href="zespol.html">Zespół</a></li>
         <li><a href="baza-wiedzy.html">Baza wiedzy</a></li>
-        <li><a href="baza-instrukcji.html">Instrukcje</a></li>
+        <li><a href="instrukcje-slajdy.html">Instrukcje – slajdy</a></li>
+        <li><a href="baza-instrukcji.html">Instrukcje wideo</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul></div>
       <div><h4>Kontakt</h4><ul>

@@ -6,21 +6,21 @@
 <title>Zespół – Kancelaria Lisowiec, Jasło</title>
 <meta name="description" content="Zespół Kancelarii Lisowiec: Janusz Lisowiec (praktyk spraw podatkowych) oraz radca prawny Patrycja Szatkowska – RODO, AI, prawo IT i prawo autorskie.">
 <meta name="theme-color" content="#B0902F">
-<link rel="canonical" href="https://kancelaria-lisowiec.pl/zespol.html">
+<link rel="canonical" href="https://kancelarialisowiec.pl/zespol.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kancelaria Lisowiec">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:title" content="Zespół – Kancelaria Lisowiec, Jasło">
 <meta property="og:description" content="Zespół Kancelarii Lisowiec: Janusz Lisowiec (praktyk spraw podatkowych) oraz radca prawny Patrycja Szatkowska – RODO, AI, prawo IT i prawo autorskie.">
-<meta property="og:url" content="https://kancelaria-lisowiec.pl/zespol.html">
-<meta property="og:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
+<meta property="og:url" content="https://kancelarialisowiec.pl/zespol.html">
+<meta property="og:image" content="https://kancelarialisowiec.pl/assets/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Zespół – Kancelaria Lisowiec, Jasło">
 <meta name="twitter:description" content="Zespół Kancelarii Lisowiec: Janusz Lisowiec (praktyk spraw podatkowych) oraz radca prawny Patrycja Szatkowska – RODO, AI, prawo IT i prawo autorskie.">
-<meta name="twitter:image" content="https://kancelaria-lisowiec.pl/assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="twitter:image" content="https://kancelarialisowiec.pl/assets/logo.png">
+  <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/czcionki.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -52,8 +52,21 @@
       <a href="uslugi.html">Usługi</a>
       <a href="zespol.html" aria-current="page">Zespół</a>
       <a href="baza-wiedzy.html">Baza wiedzy</a>
-      <a href="baza-instrukcji.html">Instrukcje</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Instrukcje</button>
+        <div class="nav__dd-menu">
+          <a href="instrukcje-slajdy.html">Instrukcje – slajdy</a>
+          <a href="baza-instrukcji.html">Instrukcje wideo</a>
+        </div>
+      </div>
       <a href="kontakt.html">Kontakt</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Narzędzia</button>
+        <div class="nav__dd-menu">
+          <a href="nieobecnosci-urlopy.html">Panel klienta</a>
+          <a href="filmy-instruktazowe.html">Filmy instruktażowe</a>
+        </div>
+      </div>
       <a class="btn btn--primary nav__cta" href="kontakt.html">Umów konsultację</a>
     </nav>
   </div>
@@ -92,7 +105,7 @@
     <h2>Księgowość, kadry i płace</h2>
 
     <div class="lead-card">
-      <div class="lead-card__photo"><span>MG</span></div>
+      <div class="lead-card__photo"><img src="assets/magdalena-gancarz.jpg" alt="Magdalena Gancarz — główna księgowa" width="1023" height="1537"></div>
       <div class="lead-card__body">
         <p class="person__role">Główna księgowa</p>
         <h3>Magdalena Gancarz</h3>
@@ -104,7 +117,7 @@
     </div>
 
     <div class="lead-card">
-      <div class="lead-card__photo"><span>NR</span></div>
+      <div class="lead-card__photo"><img src="assets/natalia-rapala.jpg" alt="Natalia Rąpała — specjalista do spraw kadr i płac" width="1060" height="1484"></div>
       <div class="lead-card__body">
         <p class="person__role">Specjalista do spraw kadr i płac</p>
         <h3>Natalia Rąpała</h3>
@@ -125,6 +138,7 @@
 
     <div class="spec-card">
       <div class="spec-card__aside">
+        <div class="spec-card__photo"><img src="assets/patrycja-szatkowska.jpg" alt="Patrycja Szatkowska — radca prawny" width="1060" height="1589"></div>
         <p class="eyebrow">Radca prawny</p>
         <h3>Patrycja Szatkowska</h3>
         <p style="color:#3d2f12;margin:.5rem 0 0">RODO · AI Act · Prawo IT i nowych technologii · Prawo autorskie</p>
@@ -169,7 +183,8 @@
         <li><a href="o-kancelarii.html">O kancelarii</a></li>
         <li><a href="zespol.html">Zespół</a></li>
         <li><a href="baza-wiedzy.html">Baza wiedzy</a></li>
-        <li><a href="baza-instrukcji.html">Instrukcje</a></li>
+        <li><a href="instrukcje-slajdy.html">Instrukcje – slajdy</a></li>
+        <li><a href="baza-instrukcji.html">Instrukcje wideo</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul></div>
       <div><h4>Kontakt</h4><ul>

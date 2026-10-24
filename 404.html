@@ -7,9 +7,9 @@
 <meta name="description" content="Strona, której szukasz, nie istnieje lub została przeniesiona.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#B0902F">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/czcionki.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -41,8 +41,21 @@
       <a href="uslugi.html">Usługi</a>
       <a href="zespol.html">Zespół</a>
       <a href="baza-wiedzy.html">Baza wiedzy</a>
-      <a href="baza-instrukcji.html">Instrukcje</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Instrukcje</button>
+        <div class="nav__dd-menu">
+          <a href="instrukcje-slajdy.html">Instrukcje – slajdy</a>
+          <a href="baza-instrukcji.html">Instrukcje wideo</a>
+        </div>
+      </div>
       <a href="kontakt.html">Kontakt</a>
+      <div class="nav__dd">
+        <button type="button" class="nav__dd-btn" aria-expanded="false">Narzędzia</button>
+        <div class="nav__dd-menu">
+          <a href="nieobecnosci-urlopy.html">Panel klienta</a>
+          <a href="filmy-instruktazowe.html">Filmy instruktażowe</a>
+        </div>
+      </div>
       <a class="btn btn--primary nav__cta" href="kontakt.html">Umów konsultację</a>
     </nav>
   </div>
@@ -83,7 +96,8 @@
         <li><a href="o-kancelarii.html">O kancelarii</a></li>
         <li><a href="zespol.html">Zespół</a></li>
         <li><a href="baza-wiedzy.html">Baza wiedzy</a></li>
-        <li><a href="baza-instrukcji.html">Instrukcje</a></li>
+        <li><a href="instrukcje-slajdy.html">Instrukcje – slajdy</a></li>
+        <li><a href="baza-instrukcji.html">Instrukcje wideo</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul></div>
       <div><h4>Kontakt</h4><ul>

@@ -120,26 +120,10 @@
 
       <div>
         <h2>Formularz kontaktowy</h2>
-        <form class="form" data-demo style="margin-top:24px" aria-label="Formularz kontaktowy">
-          <div class="form__row">
-            <div class="field">
-              <label for="c-name">Imię i nazwisko *</label>
-              <input id="c-name" name="name" type="text" required>
-            </div>
-            <div class="field">
-              <label for="c-company">Firma</label>
-              <input id="c-company" name="company" type="text">
-            </div>
-          </div>
-          <div class="form__row">
-            <div class="field">
-              <label for="c-email">E-mail *</label>
-              <input id="c-email" name="email" type="email" required>
-            </div>
-            <div class="field">
-              <label for="c-phone">Telefon</label>
-              <input id="c-phone" name="phone" type="tel">
-            </div>
+        <form class="form" data-mailto="j.lisowiec@kancelaria-lisowiec.pl" style="margin-top:24px" aria-label="Formularz kontaktowy">
+          <div class="field">
+            <label for="c-phone">Telefon *</label>
+            <input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="np. 600 100 200">
           </div>
           <div class="field">
             <label for="c-topic">Temat sprawy</label>
@@ -159,10 +143,10 @@
           </div>
           <label class="form__consent">
             <input type="checkbox" required>
-            <span>Zapoznałem/-am się z <a href="polityka-prywatnosci.html">informacją o przetwarzaniu danych</a> i wyrażam zgodę na kontakt w sprawie mojego zapytania.</span>
+            <span>Zapoznałem/-am się z <a href="polityka-prywatnosci.html">informacją o przetwarzaniu danych</a> i wyrażam zgodę na kontakt telefoniczny w sprawie mojego zapytania.</span>
           </label>
-          <button class="btn btn--primary" type="submit">Wyślij wiadomość</button>
-          <p class="form__note">Formularz demonstracyjny. Aby działał, należy podłączyć obsługę wysyłki (usługa formularzy lub skrypt serwerowy) i zaktualizować klauzulę informacyjną RODO.</p>
+          <button class="btn btn--primary" type="submit">Przygotuj wiadomość</button>
+          <p class="form__note">Prosimy tylko o numer telefonu i opis sprawy — oddzwonimy w godzinach pracy kancelarii. Przycisk otworzy Twój program pocztowy z gotową treścią; wystarczy ją wysłać. Możesz też od razu zadzwonić: <a href="tel:+48505004131">+48 505 004 131</a> lub napisać na <a href="mailto:j.lisowiec@kancelaria-lisowiec.pl">j.lisowiec@kancelaria-lisowiec.pl</a>.</p>
         </form>
       </div>
 
